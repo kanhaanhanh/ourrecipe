@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../contexts/UserContext/UserContext";
 import { Card, Form, Button, Alert, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/Logo.PNG";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import './Login.scss';
 
@@ -152,24 +152,24 @@ const Login = () => {
               </div>
 
               <div className="text-center mb-3">or login with</div>
-                <Row className="mb-3">
-                  <Col xs={6}>
-                    <Link to="#" className="btn btn-block btn-social btn-facebook rounded-pill" onClick={handleGoogleSignIn}>
-                        
-                        </Link>
-                  </Col>
-                  <Col xs={6}>
-                    <Link to="#" className="btn btn-block btn-social btn-google rounded-pill" onClick={handleFacebookSignIn}>
-                        
-                    </Link>
-                  </Col>
-                </Row>
-              
+              <Row className="mb-3">
+                <Col xs={6}>
+                  <Link to="#" className="btn btn-block btn-social btn-facebook rounded-pill" onClick={handleGoogleSignIn}>
+
+                  </Link>
+                </Col>
+                <Col xs={6}>
+                  <Link to="#" className="btn btn-block btn-social btn-google rounded-pill" onClick={handleFacebookSignIn}>
+
+                  </Link>
+                </Col>
+              </Row>
+
 
               <div className="text-center mt-3">
                 Don&sbquo;t have an account? <Link to="/signup">
-                    <b>Sign up</b>
-                    </Link>
+                  <b>Sign up</b>
+                </Link>
               </div>
             </Form>
           </Card.Body>
