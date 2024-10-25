@@ -1,0 +1,48 @@
+.user-profile-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center items horizontally
+    justify-content: center; // Center items vertically
+  
+    .profile-image {
+        width: 75px;
+        height: 75px;
+        max-width: 100%;
+        border-radius: 50%; // Add round shape to the profile image
+    }
+  
+    h5 {
+      margin-top: 10px;
+    }
+  
+    .follow-info {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    p {
+      margin: 5px 0;
+    }
+  
+    h2 {
+      margin-top: 15px;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  

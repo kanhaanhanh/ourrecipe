@@ -1,0 +1,20 @@
+// Center the pagination
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  
+    // Adjust the button styles
+    button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+  
+      &:disabled {
+        cursor: not-allowed;
+        color: #999;
+      }
+    }
+  }

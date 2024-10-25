@@ -1,0 +1,45 @@
+// Your SCSS code
+
+.button-size {
+    width: 130px;
+    top: 85px;
+  }
+  
+  .cateContainer {
+    display: flex;
+    justify-content: flex-end; // Adjusted to flex-end for alignment
+  }
+  
+  // Update your Category-dropdown.scss file
+
+// SettingDropdown.scss
+
+.custom-dropdown {
+    margin-top: -20px;
+    margin-right: -20px;
+  
+    .Setting {
+      font-size: 1.5rem; // Adjust the font size of the toggle button
+      margin: 0 2px 0 0;
+    }
+  
+    .alignRight {
+      right: 0; // Align the dropdown menu to the right
+  
+      .dropdown-menu {
+        font-size: 1rem; // Adjust the font size of the entire dropdown menu
+      }
+  
+      .dropdown-item {
+        font-size: 0.9rem; // Adjust the font size of the dropdown items
+        padding: 6px 12px; // Adjust padding as needed
+      }
+  
+      .dropdown-item:hover {
+        background-color: #f8f9fa;
+        color: #007bff;
+      }
+    }
+  }
+  
+  

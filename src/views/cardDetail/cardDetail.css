@@ -1,0 +1,10 @@
+.comment {
+    margin-bottom: 1rem;
+  }
+  
+  .replies {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    border-left: 1px solid #ccc;
+    padding-left: 1rem;
+  }

@@ -1,0 +1,160 @@
+// styles.scss
+@import '@fortawesome/fontawesome-free/css/all.css';
+.login-signup-body {
+    // width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, rgba(0, 0, 255, 0.37), rgba(255, 0, 0, 0.22)), url('../../assets/background.jpg') ;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      z-index: -2;
+    }
+  }
+  
+  .logo-img {
+    text-align: center;
+  
+    img {
+      padding: 25px;
+      width: 130px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  
+  .logo-img-home {
+    width: 50px;
+    height: auto;
+    
+  }
+  
+  .card {
+    display: flex;
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255, 0.95);
+  }
+  
+  .techbook-logo {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+  
+    img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  
+  .img-right-sign_up,
+  .img-left-log_in {
+    background: url("../../assets/image.jpg") center;
+    width: 50%;
+    background-size: cover;
+  }
+  
+  .card-body-log-in,
+  .card-body-sign-up {
+    padding: 0.5rem;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .form-input {
+    position: relative;
+    
+  
+    input,
+    select {
+      width: 100%;
+      height: 40px;
+      padding-left: 40px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      box-shadow: none;
+      border: 1px solid #00000020;
+      border-radius: 50px;
+      outline: none;
+      background: transparent;
+  
+      &::placeholder {
+        color: black;
+        padding-left: 0px;
+      }
+  
+      &:focus,
+      &:valid {
+        border: 2px solid #007bff;
+      }
+  
+      &:focus::placeholder {
+        color: #454b69;
+      }
+    }
+  
+    span {
+      position: absolute;
+      top: 10px;
+      padding-left: 15px;
+      color: #007bff;
+    }
+  }
+
+  .form-box {
+    .btn-social {
+      color: white;
+      font-weight: bold;
+      transition: 0.5s;
+      width: 100%;
+    }
+  
+    .btn-facebook {
+      background: #4866a8;
+      justify-content: flex-start;
+  
+      &:hover {
+        background: #4866a8;
+      }
+
+      &::before {
+        content: '\f09a'; /* Unicode for the Facebook icon */
+        font-family: 'FontAwesome'; /* Set the font family to FontAwesome or another icon library */
+        padding: 5px;
+      }
+    }
+  
+    .btn-google {
+      background: #da3f34;
+      justify-content: flex-end;
+  
+      &:hover {
+        background: #da3f34;
+      }
+
+      &::before {
+        content: '\f1a0'; /* Unicode for the Google icon */
+        font-family: 'FontAwesome'; /* Set the font family to FontAwesome or another icon library */
+        padding: 5px;
+      }
+    }
+  }
+  
+  
+  // ... (rest of your SCSS code)
+  

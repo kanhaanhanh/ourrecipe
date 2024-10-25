@@ -1,0 +1,17 @@
+.pagination-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-center button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .pagination-center button:disabled {
+    cursor: not-allowed;
+    color: #999;
+  }
+  

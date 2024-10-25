@@ -1,0 +1,86 @@
+.navbar {
+    background-color: #D9D9D9;
+    position: relative;
+  }
+  
+  .btn {
+    /* color: #ffffff;  */
+    font-weight: bold; 
+    margin: 5px 20px 5px 5px; 
+    width: 100px;
+    border-radius: 10px;
+  }
+  
+  .Recipe-logo {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    width: 40px; 
+    height: auto; 
+    border-radius: 50%; 
+    border: 1px solid black;
+  }
+
+  .Brand-name {
+    position: absolute;
+    top: 25px; /* Adjust the top position based on your design */
+    left: 60px; /* Adjust the left position based on your design */
+    font-size: 18px; /* Adjust the font size based on your design */
+    color: #000; /* Set the color for the brand name */
+    font-weight: bolder;
+  }
+  
+  .dropdown-style {
+    font-weight: bold;
+    height: auto;
+    background-color: none;
+    border-radius: 15px;
+  }
+  
+  .dropdown-style:hover {
+    font-weight: bold;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+  }
+  
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .btn-light {
+    color: black;
+  }
+  
+  .btn-primary {
+    color: white;
+  }
+  
+  .search-bar { 
+    border-radius: 10px 0 0 10px;
+    z-index: 1;
+  }
+  
+  .search {
+    width: 400px;
+    margin: 5px 20px 5px 5px;
+  }
+  
+  .input-group-text img {
+    width: 15px;
+  }
+  
+  .input-group-text {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .profile-icon {
+    border-radius: 50%; // Add round shape to the profile icon
+    color: #121212;
+  }
+  
+  .profile-icon,
+  .menu-icon {
+    margin-right: 10px; // Add right margin to the menu icon
+    margin-left: 10px;  // Add left margin to the menu icon
+  }

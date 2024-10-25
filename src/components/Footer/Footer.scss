@@ -1,0 +1,20 @@
+/* Footer.scss */
+
+.footer {
+    // background-color: #0dcaf0;
+    padding: 20px 0;
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  /* Add additional styling as needed */
+  
+  /* Style for social icons */
+  .social-icon {
+    color: #555; /* Set the desired color */
+    margin-right: 10px; /* Adjust as needed for spacing between icons */
+  
+    &:hover {
+      color: #0080ff; /* Change color on hover if desired */
+    }
+  }
+  
