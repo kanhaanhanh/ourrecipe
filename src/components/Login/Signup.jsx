@@ -4,10 +4,10 @@ import { useUserAuth } from "../../contexts/UserContext/UserContext";
 import { Card, Form, Button, Alert, Row, Col, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Login.scss';
-import Logo from '../../assets/Logo.png';
+import Logo from '../../assets/Logo.PNG';
 
 const Signup = () => {
-    const {signUp} = useUserAuth();
+    const { signUp } = useUserAuth();
     const [error, setError] = useState("");
     const [user, setUser] = useState({
         firstname: "",
@@ -17,27 +17,27 @@ const Signup = () => {
         comfirmPassword: "",
     });
     const userhandler = (event) => {
-        const {name, value} = event.target;
+        const { name, value } = event.target;
         console.log(name + ":::::::::::::" + value)
-        setUser((perState) => ({...perState, [name]: value}));
+        setUser((perState) => ({ ...perState, [name]: value }));
     };
 
     const handleGoogleSignIn = async () => {
         try {
-          const provider = new GoogleAuthProvider();
-          await signInWithPopup(auth, provider);
+            const provider = new GoogleAuthProvider();
+            await signInWithPopup(auth, provider);
         } catch (error) {
-          console.error("Google sign-in error:", error);
+            console.error("Google sign-in error:", error);
         }
-      };
-    
-      const handleFacebookSignIn = () => {
+    };
+
+    const handleFacebookSignIn = () => {
         // Handle Facebook sign-in UI (no backend logic in this example)
-      };
+    };
 
     const RegisterHandler = (e) => {
         e.preventDefault();
-        const { email, password, comfirmPassword, firstName, lastName} = user;
+        const { email, password, comfirmPassword, firstName, lastName } = user;
         if (password !== comfirmPassword) {
             setInterval(() => {
                 setError("");
@@ -79,26 +79,26 @@ const Signup = () => {
                                     <Row className="d-flex justify-content-between">
                                         <Col md={6}>
                                             <div className="form-input">
-                                            <span><i className="fa fa-user"></i></span>
-                                            <input
-                                                type="text"
-                                                name="firstName"
-                                                placeholder="First Name"
-                                                onChange={userhandler}
-                                                required
-                                            />
+                                                <span><i className="fa fa-user"></i></span>
+                                                <input
+                                                    type="text"
+                                                    name="firstName"
+                                                    placeholder="First Name"
+                                                    onChange={userhandler}
+                                                    required
+                                                />
                                             </div>
                                         </Col>
                                         <Col md={6}>
                                             <div className="form-input">
-                                            <span><i className="fa fa-user"></i></span>
-                                            <input
-                                                type="text"
-                                                name="lastName"
-                                                placeholder="Last Name"
-                                                onChange={userhandler}
-                                                required
-                                            />
+                                                <span><i className="fa fa-user"></i></span>
+                                                <input
+                                                    type="text"
+                                                    name="lastName"
+                                                    placeholder="Last Name"
+                                                    onChange={userhandler}
+                                                    required
+                                                />
                                             </div>
                                         </Col>
                                     </Row>
@@ -148,16 +148,16 @@ const Signup = () => {
 
                                     <div className="text-center mb-3">or sign up with</div>
                                     <Row className="mb-3">
-                                    <Col xs={6}>
-                                        <Link to="#" className="btn btn-block btn-social btn-facebook rounded-pill" onClick={handleGoogleSignIn}>
-                                            
+                                        <Col xs={6}>
+                                            <Link to="#" className="btn btn-block btn-social btn-facebook rounded-pill" onClick={handleGoogleSignIn}>
+
                                             </Link>
-                                    </Col>
-                                    <Col xs={6}>
-                                        <Link to="#" className="btn btn-block btn-social btn-google rounded-pill" onClick={handleFacebookSignIn}>
-                                            
-                                        </Link>
-                                    </Col>
+                                        </Col>
+                                        <Col xs={6}>
+                                            <Link to="#" className="btn btn-block btn-social btn-google rounded-pill" onClick={handleFacebookSignIn}>
+
+                                            </Link>
+                                        </Col>
                                     </Row>
                                     <div className="text-center mt-3">
                                         Already have an account? <Link to="/login" className="login-link">Log In</Link>
