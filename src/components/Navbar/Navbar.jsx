@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/Logo.png';
+import Logo from '../../assets/Logo.PNG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import SettingDropdown from '../Dropdown/SettingDropdown';
@@ -58,7 +58,7 @@ function AppNavbar({ handleSearch }) {
         <img src={Logo} alt="Logo" className="Recipe-logo ml-auto" />
         <span className="Brand-name">OurRecipe</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarNav"/>
+      <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
         <Nav className="ms-auto">
           <Nav.Link as={Link} to="/" className='p-2 dropdown-style mt-2'>HOME</Nav.Link>

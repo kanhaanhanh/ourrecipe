@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, FormControl, Button, NavDropdown } from 'react-bootstrap';
 import './Navbar.scss'; // You can keep your custom styles
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/Logo.png';
+import Logo from '../../assets/Logo.PNG';
 import search from '../../assets/search-button.png';
 import SettingDropdown from '../Dropdown/SettingDropdown';
 import SearchBar from "../SearchBar/SearchBar";
@@ -18,7 +18,7 @@ function AppNavbar({ handleSearch }) {
 
   const handleMouseEnter = (dropdownName) => {
     switch (dropdownName) {
-      
+
       case 'healthyxdiet':
         setShowDropdown3(true);
         break;
@@ -38,7 +38,7 @@ function AppNavbar({ handleSearch }) {
 
   const handleMouseLeave = (dropdownName) => {
     switch (dropdownName) {
-      
+
       case 'healthyxdiet':
         setShowDropdown3(false);
         break;
@@ -62,11 +62,11 @@ function AppNavbar({ handleSearch }) {
         <img src={Logo} alt="Logo" className="Recipe-logo ml-auto" />
         <span className="Brand-name">OurRecipe</span>
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarNav"/>
+      <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
         <Nav className="ms-auto">
           <Nav.Link as={Link} to="/" className='p-2 dropdown-style mt-2'>HOME</Nav.Link>
-          
+
           <Nav.Link as={Link} to="/followed" className='p-2 dropdown-style mt-2'>FOLLOWED</Nav.Link>
           <NavDropdown
             title="HEALTHY and DIET"
@@ -135,7 +135,7 @@ function AppNavbar({ handleSearch }) {
           </li>
           <li className="nav-item ">
             {/* Use FontAwesome for menu icon */}
-            <SettingDropdown/>
+            <SettingDropdown />
           </li>
         </Nav>
       </Navbar.Collapse>
